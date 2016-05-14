@@ -1,0 +1,30 @@
+<style>
+	.background {
+		width: 100%;
+
+		background: #CFD8DC;
+		margin: 0 0 20px;
+		padding-top: 50%;
+	}
+</style>
+
+<h4>Basic</h4>
+<div class="background js-background" data-background-options='{"source":"//spacehold.it/1600x900/1.jpg"}'></div>
+
+<h4>Responsive</h4>
+<div class="background js-background" data-background-options='{"source":{"0px":"//spacehold.it/800x450/2.jpg","980px":"//spacehold.it/1600x900/2.jpg"}}'></div>
+
+<h4>Video</h4>
+<div class="background js-background" data-background-options='{"source":{"webm":"//spacehold.it/video/video.webm","mp4":"//spacehold.it/video/video.mp4","ogg":"//spacehold.it/video/video.ogv","poster":"//spacehold.it/video/poster.jpg"}}'></div>
+
+<h4>YouTube</h4>
+<div class="background js-background" data-background-options='{"source":{"autoPlay":true,"video":"//youtu.be/LlQ8dhdSjWs"},"youtubeOptions":{"start":60}}'></div>
+
+<!--
+<div class="background js-background" data-background-options='{"source":{"autoPlay":false,"video":"//youtu.be/LlQ8dhdSjWs"},"youtubeOptions":{"start":60}}'></div>
+<script>
+	$(document).ready(function() {
+		$(".js-background").background("play");
+	});
+</script>
+-->

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<!-- Page Attributes -->
+		<title>Tooltip &middot; Formstone</title>
+		<!-- Modernizer -->
+		<script src="../js/modernizr.js?v=1.0.1"></script>
+		<!-- Compiled CSS -->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="../css/site.css?v=1.0.1">
+		<!--<![endif]-->
+		<!--[if IE 8]><script>var IE8 = true;</script><script src="../js/site-ie8.js?v=1.0.1"></script><link rel="stylesheet" href="../css/site-ie8.css?v=1.0.1"><![endif]-->
+		<!--[if IE 9]><script>var IE9 = true;</script><script src="../js/site-ie9.js?v=1.0.1"></script><link rel="stylesheet" href="../css/site-ie9.css?v=1.0.1"><![endif]-->
+		<!-- Compiled JS -->
+		<script src="../js/site.js?v=1.0.1"></script>
+	</head>
+
+	<body class="fs-grid demo_page">
+		<div class="demo_content">
+			<header class="header">
+				<div class="fs-row">
+					<div class="fs-cell-centered fs-xl-10">
+						<a href="https://formstone.it/" class="header_logo icon-logo">Formstone</a>
+					</div>
+				</div>
+			</header>
+			<div class="fs-row">
+				<div class="fs-cell-centered fs-xl-10">
+					<h1 id="tooltip-demo">Tooltip Demo</h1>
+					<p class="back_link">
+						<a href="https://formstone.it/components/tooltip">View Documentation</a>
+					</p>
+					<!-- START: DEMO -->
+					<style>
+					.center {
+						text-align: center;
+					}
+					
+					.tooltips {
+						margin: 20px 0;
+						overflow: hidden;
+					}
+					
+					.tooltip {
+						background: #00bcd4;
+						border-radius: 3px;
+						color: #fff;
+						clear: both;
+						display: block;
+						height: 50px;
+						line-height: 50px;
+						margin: 0 auto 10px;
+						text-align: center;
+						width: 50%;
+					}
+					
+					.long_text .fs-tooltip-content {
+						width: 250px;
+						white-space: normal;
+					}
+					</style>
+
+					<h4 class="center">Basic</h4>
+					<div class="tooltips">
+						<div class="tooltip js-tooltip" data-title="Left Tooltip" data-tooltip-options='{"direction":"left"}'>Left</div>
+						<div class="tooltip js-tooltip" data-title="Right Tooltip" data-tooltip-options='{"direction":"right"}'>Right</div>
+						<div class="tooltip js-tooltip" data-title="Top Tooltip" data-tooltip-options='{"direction":"top"}'>Top</div>
+						<div class="tooltip js-tooltip" data-title="Bottom Tooltip" data-tooltip-options='{"direction":"bottom"}'>Bottom</div>
+					</div>
+
+					<h4 class="center">Follow</h4>
+					<div class="tooltips">
+						<div class="tooltip js-tooltip" data-title="Left Tooltip" data-tooltip-options='{"direction":"left","follow":"true"}'>Left</div>
+						<div class="tooltip js-tooltip" data-title="Right Tooltip" data-tooltip-options='{"direction":"right","follow":"true"}'>Right</div>
+						<div class="tooltip js-tooltip" data-title="Top Tooltip" data-tooltip-options='{"direction":"top","follow":"true"}'>Top</div>
+						<div class="tooltip js-tooltip" data-title="Bottom Tooltip" data-tooltip-options='{"direction":"bottom","follow":"true"}'>Bottom</div>
+					</div>
+
+					<h4 class="center">Match</h4>
+					<div class="tooltips">
+						<div class="tooltip js-tooltip" data-title="Left Tooltip" data-tooltip-options='{"direction":"left","match":"true"}'>Left</div>
+						<div class="tooltip js-tooltip" data-title="Right Tooltip" data-tooltip-options='{"direction":"right","match":"true"}'>Right</div>
+						<div class="tooltip js-tooltip" data-title="Top Tooltip" data-tooltip-options='{"direction":"top","match":"true"}'>Top</div>
+						<div class="tooltip js-tooltip" data-title="Bottom Tooltip" data-tooltip-options='{"direction":"bottom","match":"true"}'>Bottom</div>
+					</div>
+
+					<h4 class="center">Delay</h4>
+					<div class="tooltips">
+						<div class="tooltip js-tooltip" data-title="Left Tooltip" data-tooltip-options='{"direction":"left","delay":"500"}'>Left</div>
+						<div class="tooltip js-tooltip" data-title="Right Tooltip" data-tooltip-options='{"direction":"right","delay":"500"}'>Right</div>
+						<div class="tooltip js-tooltip" data-title="Top Tooltip" data-tooltip-options='{"direction":"top","delay":"500"}'>Top</div>
+						<div class="tooltip js-tooltip" data-title="Bottom Tooltip" data-tooltip-options='{"direction":"bottom","delay":"500"}'>Bottom</div>
+					</div>
+
+					<h4 class="center">Long Text</h4>
+					<div class="tooltips">
+						<div class="tooltip js-tooltip" data-title="Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. " data-tooltip-options='{"customClass":"long_text","direction":"top"}'>Left</div>
+					</div>
+
+					<h4 class="center">No Theme</h4>
+					<div class="tooltips">
+						<div class="tooltip js-tooltip" data-title="No Theme" data-tooltip-options='{"theme":"","direction":"bottom"}'>No Theme</div>
+					</div>
+					<!-- END: DEMO -->
+					<div class="copyright">&copy; 2016</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

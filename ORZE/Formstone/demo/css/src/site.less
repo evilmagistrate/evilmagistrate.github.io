@@ -1,0 +1,181 @@
+/* ==========================================================================
+	Imports
+============================================================================= */
+
+	@import (inline) "../../bower/normalize-css/normalize.css";
+
+	@import "plugins.less";
+
+	@white: #fff;
+	@primary: #455a64;
+
+
+	*:focus {
+		outline: none;
+	}
+
+	// Site
+
+	html,
+	body {
+		min-height: 500px;
+	}
+
+	body {
+		font-size: 16px;
+		padding: 0 0 50px;
+	}
+
+	body,
+	.demo_content {
+		background: #ECEFF1;
+	}
+
+	.demo_output {
+		height: 100px;
+
+		line-height: 1.8;
+
+		@media screen and (min-width: 740px) {
+			height: 200px;
+		}
+	}
+
+	p {
+		margin: 20px 0;
+	}
+
+	a {
+		color: @primary;
+	}
+
+	li {
+		margin: 5px 0;
+	}
+
+	fieldset {
+		border: none;
+		padding: 0;
+		margin: 20px 0;
+	}
+
+	label {
+		display: block;
+		margin: 0 0 5px;
+	}
+
+	pre,
+	input,
+	textarea,
+	.form_textarea {
+		background: @white;
+		border: 1px solid @primary;
+		border-radius: 2px;
+		color: @primary;
+		font-size: 16px;
+		margin: 20px 0;
+		padding: 10px;
+	}
+
+	input {
+		width: 100%;
+
+		margin: 10px 0;
+		padding: 5px 10px;
+	}
+
+	textarea,
+	.form_textarea {
+		width: 100%;
+		max-height: 200px;
+
+		overflow: auto;
+	}
+
+	// button,
+	.button {
+		width: auto;
+
+		background: @primary;
+		border: none;
+		border-radius: 2px;
+		display: inline-block;
+		font-size: 16px;
+		color: @white;
+		padding: 10px 20px;
+		text-decoration: none;
+	}
+
+	// Demo Bar
+
+/*
+	.demo_bar {
+		background: @primary;
+		color: @white;
+		margin: 0 0 20px;
+		padding: 20px;
+
+		&:after {
+			clear: both;
+			content: '';
+			display: table;
+		}
+
+		.demo_field {
+			float: left;
+			margin: 0 20px 0 0;
+		}
+
+		.demo_label {
+			color: #CFD8DC;
+			float: left;
+			font-size: 12px;
+			line-height: 40px;
+			margin: 0 20px 0 0;
+			text-transform: uppercase;
+		}
+
+		.demo_select {
+			width: 100px;
+
+			float: left;
+		}
+
+		.demo_select_wide {
+			width: 200px;
+		}
+	}
+*/
+
+	// Header
+
+	.header {
+		width: 100%;
+		height: 50px;
+
+		background: @primary;
+		margin: 0 0 20px;
+	}
+
+	.header_logo {
+		color: @white;
+		float: left;
+		font-size: 18px;
+		line-height: 50px;
+		text-decoration: none;
+	}
+
+	h1 {
+		margin-bottom: 10px;
+	}
+
+	.back_link {
+		font-size: 12px;
+		margin-top: 0;
+	}
+
+	.copyright {
+		color: @primary;
+		font-size: 12px;
+		margin: 30px 0 20px;
+	}

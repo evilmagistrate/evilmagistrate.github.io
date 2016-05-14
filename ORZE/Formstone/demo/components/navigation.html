@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<!-- Page Attributes -->
+		<title>Navigation &middot; Formstone</title>
+		<!-- Modernizer -->
+		<script src="../js/modernizr.js?v=1.0.1"></script>
+		<!-- Compiled CSS -->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="../css/site.css?v=1.0.1">
+		<!--<![endif]-->
+		<!--[if IE 8]><script>var IE8 = true;</script><script src="../js/site-ie8.js?v=1.0.1"></script><link rel="stylesheet" href="../css/site-ie8.css?v=1.0.1"><![endif]-->
+		<!--[if IE 9]><script>var IE9 = true;</script><script src="../js/site-ie9.js?v=1.0.1"></script><link rel="stylesheet" href="../css/site-ie9.css?v=1.0.1"><![endif]-->
+		<!-- Compiled JS -->
+		<script src="../js/site.js?v=1.0.1"></script>
+	</head>
+
+	<body class="fs-grid demo_page">
+		<div class="demo_content">
+			<header class="header">
+				<div class="fs-row">
+					<div class="fs-cell-centered fs-xl-10">
+						<a href="https://formstone.it/" class="header_logo icon-logo">Formstone</a>
+					</div>
+				</div>
+			</header>
+			<div class="fs-row">
+				<div class="fs-cell-centered fs-xl-10">
+					<h1 id="navigation-demo">Navigation Demo</h1>
+					<p class="back_link">
+						<a href="https://formstone.it/components/navigation">View Documentation</a>
+					</p>
+					<!-- START: DEMO -->
+					<style>
+					@media screen and (min-width: 980px) {
+						.nav_offscreen,
+						.nav_handle {
+							display: none;
+						}
+					}
+					
+					.nav_handle.fs-navigation-overlay-handle.fs-navigation-enabled,
+					.nav_handle.fs-navigation-reveal-handle.fs-navigation-enabled,
+					.nav_handle.fs-navigation-push-handle.fs-navigation-enabled {
+						clear: both;
+						margin-top: 10px;
+						margin-bottom: 20px;
+					}
+					</style>
+
+					<h4>Basic</h4>
+					<p>By default, Navigation will only activate itself on screens smaller than 980px. Resize your screen if the menu is not active.</p>
+					<h5 class="nav_handle nav_handle_toggle">Navigation</h5>
+					<nav class="js-navigation" data-navigation-handle=".nav_handle_toggle" data-navigation-options='{}'>
+						<a href="#">Home</a>
+						<a href="#">About</a>
+						<a href="#">Contact</a>
+					</nav>
+					<br>
+
+					<h4>No Theme</h4>
+					<h5 class="nav_handle nav_handle_toggle2">Navigation</h5>
+					<nav class="js-navigation" data-navigation-handle=".nav_handle_toggle2" data-navigation-options='{"theme":""}'>
+						<a href="#">Home</a>
+						<a href="#">About</a>
+						<a href="#">Contact</a>
+					</nav>
+					<br>
+
+					<h4>Off Canvas</h4>
+					<div class="fs-row">
+						<div class="fs-cell fs-xs-full fs-sm-half fs-md-2 fs-lg-3 fs-xl-2">
+							<div>
+								Overlay Left
+								<button type="button" class="button nav_handle nav_handle_overlay_left">Menu</button>
+							</div>
+						</div>
+						<div class="fs-cell fs-xs-full fs-sm-half fs-md-2 fs-lg-3 fs-xl-2">
+							<div>
+								Overlay Right
+								<button type="button" class="button nav_handle nav_handle_overlay_right">Menu</button>
+							</div>
+						</div>
+					</div>
+					<div class="fs-row">
+						<div class="fs-cell fs-xs-full fs-sm-half fs-md-2 fs-lg-3 fs-xl-2">
+							<div>
+								Reveal Left
+								<button type="button" class="button nav_handle nav_handle_reveal_left">Menu</button>
+							</div>
+						</div>
+						<div class="fs-cell fs-xs-full fs-sm-half fs-md-2 fs-lg-3 fs-xl-2">
+							<div>
+								Reveal Right
+								<button type="button" class="button nav_handle nav_handle_reveal_right">Menu</button>
+							</div>
+						</div>
+					</div>
+					<div class="fs-row">
+						<div class="fs-cell fs-xs-full fs-sm-half fs-md-2 fs-lg-3 fs-xl-2">
+							<div>
+								Push Left
+								<button type="button" class="button nav_handle nav_handle_push_left">Menu</button>
+							</div>
+						</div>
+						<div class="fs-cell fs-xs-full fs-sm-half fs-md-2 fs-lg-3 fs-xl-2">
+							<div>
+								Push Right
+								<button type="button" class="button nav_handle nav_handle_push_right">Menu</button>
+							</div>
+						</div>
+					</div>
+
+					<div style="height: 500px"></div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<nav class="nav_offscreen js-navigation" data-navigation-handle=".nav_handle_overlay_left" data-navigation-content=".demo_content" data-navigation-options='{"type":"overlay","gravity":"left","maxWidth":"10000px"}'>
+			Overlay Left
+		</nav>
+
+		<nav class="nav_offscreen js-navigation" data-navigation-handle=".nav_handle_overlay_right" data-navigation-content=".demo_content" data-navigation-options='{"type":"overlay","gravity":"right","maxWidth":"10000px"}'>
+			Overlay Right
+		</nav>
+
+		<nav class="nav_offscreen js-navigation" data-navigation-handle=".nav_handle_reveal_left" data-navigation-content=".demo_content" data-navigation-options='{"type":"reveal","gravity":"left","maxWidth":"10000px"}'>
+			Reveal Left
+		</nav>
+
+		<nav class="nav_offscreen js-navigation" data-navigation-handle=".nav_handle_reveal_right" data-navigation-content=".demo_content" data-navigation-options='{"type":"reveal","gravity":"right","maxWidth":"10000px"}'>
+			Reveal Right
+		</nav>
+
+		<nav class="nav_offscreen js-navigation" data-navigation-handle=".nav_handle_push_left" data-navigation-content=".demo_content" data-navigation-options='{"type":"push","gravity":"left","maxWidth":"10000px"}'>
+			Push Left
+		</nav>
+
+		<nav class="nav_offscreen js-navigation" data-navigation-handle=".nav_handle_push_right" data-navigation-content=".demo_content" data-navigation-options='{"type":"push","gravity":"right","maxWidth":"10000px"}'>
+			Push Right
+		</nav>
+
+
+
+		<div class="demo_content">
+			<div class="fs-row">
+				<div class="fs-cell">
+					<!-- END: DEMO -->
+					<div class="copyright">&copy; 2016</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
